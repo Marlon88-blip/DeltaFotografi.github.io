@@ -7,27 +7,39 @@ body {
 }
 
 /* Navigation */
+/* Asegúrate de que el contenedor de la navegación ocupe todo el ancho */
 .nav {
-  text-align: right;
-  height: 70px;
-  line-height: 70px;
-  position: relative;
-  z-index: 999;
-  background-color: #00000000;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  position: fixed; /* Asegúrate de que el menú esté fijo en la parte superior */
+  top: 0;
+  left: 0;
+  background: #000000; /* Opcional: Fondo blanco para que el menú sea más visible */
+  padding: 10px 0; /* Ajusta el padding según tus necesidades */
+  z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
 }
+
 .menu {
-  margin: 0 30px 0 0;
+  display: flex;
+  gap: 15px; /* Espacio entre los elementos del menú */
 }
 
 .menu a {
   text-decoration: none;
-  color: #000000;
-  margin: 0 10px;
-  line-height: 70px;
-  letter-spacing: .9px;
-  text-transform: uppercase;
-  transition: all 250ms ease;
+  color: #000; /* Color del texto del menú */
+  font-weight: bold; /* Opcional: Para hacer el texto más visible */
 }
+
+.menu a:hover {
+  color: #f39c12; /* Color al pasar el mouse por encima del enlace */
+}
+
+/* Ajusta el estilo del logo si es necesario */
+.logo {
+  /* Añade tus estilos personalizados aquí */
+}
+
 
 .menu h5 {
   margin: 0 30px;
@@ -66,10 +78,10 @@ label {
 
 /* Photo Section */
 .photo {
-  width: 70%;
+  width: 100%;
   height: auto;
   position: relative;
-  background: url('https://scontent.fbog11-1.fna.fbcdn.net/v/t39.30808-6/329127713_880721833143538_1500952045008110891_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFiuWHtCTjFpjBx48vfakJ-m3WG_ubX8TKbdYb-5tfxMrcouTqv9F-2kTV9jYweb8mtq9UlKljlKu1qHNiEMIXp&_nc_ohc=iJBfQJQdK30Q7kNvgFE6lH4&_nc_ht=scontent.fbog11-1.fna&oh=00_AYBE5KSnEZ_xRF5X_toZDSOB5U6gMF1h1HtnDZb8rW1u7Q&oe=66B83109') center;
+  background: url('./img/LOGOO.png') center;
   background-size: cover;
   overflow: hidden;
 }
@@ -225,6 +237,7 @@ label {
   margin-top: -35px;
   margin-bottom: 40px;
   position: relative;
+  top: -21REM;
 }
 
 .portafolio h4{
@@ -281,7 +294,7 @@ label {
 
 .portafolio-text p{
   text-align: justify;
-  color: #6D85A8;
+  color: #ffffff;
 }
 
 .portafolio-item:hover .portafolio-text{
@@ -299,6 +312,7 @@ label {
 /*FOOTER*/
 .footer {
   position: relative;
+  top:-15REM;
   padding: 20px;
   background-color: #111;
   color: #fff;
