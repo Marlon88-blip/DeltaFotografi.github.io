@@ -236,8 +236,6 @@ label {
   margin: 0 auto;
   margin-top: -35px;
   margin-bottom: 40px;
-  position: relative;
-  top: -21REM;
 }
 
 .portafolio h4{
@@ -311,8 +309,6 @@ label {
 
 /*FOOTER*/
 .footer {
-  position: relative;
-  top:-15REM;
   padding: 20px;
   background-color: #111;
   color: #fff;
