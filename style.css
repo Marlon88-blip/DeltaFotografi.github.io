@@ -230,85 +230,12 @@ label {
 
 
 /*Portafolio*/
-.portafolio{
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: -35px;
-  margin-bottom: 40px;
-}
 
-.portafolio h4{
-  text-align: center;
-  font-weight: 400;
-  font-size: 40px;
-  color: #ff5de1;
-  letter-spacing: 1.2px;
-}
-
-.portafolio h4:after{
-  content: '';
-  display: block; 
-  width: 3%;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: #81e559;
-}
-
-.portafolio-container{
-  display: flex;
-  justify-content: space-between;
-}
-
-.portafolio-item{
-  width: 30%;
-  position: relative;
-  overflow: hidden;
-  border-radius: .20em;
-}
-
-.portafolio-item img{
-  width: 100%;
-}
-
-.portafolio-text{
-  position: absolute;
-  bottom: 0;
-  padding: 10px;
-  background: rgba(254, 255, 255, .8);
-  color: #FDFDFD;
-  transform: translateY(100%);
-  transition: all 450ms ease;
-}
-
-.portafolio-text h5{
-  color: #299FFF;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  margin: 0;
-}
-
-.portafolio-text p{
-  text-align: justify;
-  color: #ffffff;
-}
-
-.portafolio-item:hover .portafolio-text{
-  transform: translateY(0);
-}
-
-.portafolio-img{
-  transition: all 450ms ease;
-}
-
-.portafolio-item:hover .portafolio-img{
-  transform: rotate(-5deg) scale(1.15);
-}
 
 /*FOOTER*/
 .footer {
+  position:static;
+  top:-15REM;
   padding: 20px;
   background-color: #111;
   color: #fff;
@@ -407,4 +334,42 @@ button:hover {
 
 .social-media a:hover {
   color: #ff66ff;
+}
+.containerr {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #0000005f;
+  border-radius: 0.5em;
+  top: -5rem;
+  
+}
+
+header > h1 {
+  margin-top: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.gallery {
+  display: grid;
+  margin: 3em 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+}
+
+figure {
+  display: flex;
+  margin: 0;
+}
+
+img {
+  flex: 1;
+  max-width: 100%;
+  object-fit: cover;
 }
